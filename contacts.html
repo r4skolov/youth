@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header header--cream">
+			<div class="header__container">
+				<!--Logo-->
+				<a href="index.html" class="header__logo">
+
+					<img src="images/icon/logo-footer.svg" alt="Молодость" width="60" height="56">
+
+				</a>
+				<div class="header__panel" data-overlay>
+					<!-- Menu -->
+					<div class="header__menu" data-menu>
+						<div class="header__wrapper">
+							<div class="header__mobile">
+								<div class="header-logo">
+									<img src="images/icon/logo.svg" alt="Молодость" width="60" height="56">
+								</div>
+								<button type="button" class="menu-close" data-close>
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 2.75C6.89136 2.75 2.75 6.89136 2.75 12C2.75 17.1086 6.89136 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89136 17.1086 2.75 12 2.75Z" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3588 8.64121C15.6517 8.9341 15.6517 9.40898 15.3588 9.70187L9.70196 15.3587C9.40907 15.6516 8.93419 15.6516 8.6413 15.3587C8.34841 15.0658 8.34841 14.591 8.6413 14.2981L14.2982 8.64121C14.591 8.34832 15.0659 8.34832 15.3588 8.64121Z" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6413 8.64121C8.93419 8.34832 9.40907 8.34832 9.70196 8.64121L15.3588 14.2981C15.6517 14.591 15.6517 15.0658 15.3588 15.3587C15.0659 15.6516 14.591 15.6516 14.2982 15.3587L8.6413 9.70187C8.34841 9.40898 8.34841 8.9341 8.6413 8.64121Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+							<nav class="nav">
+								<ul class="nav__list list-reset">
+									<li class="nav__item">
+										<a class="nav__link" href="about.html">
+											о нас
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="base.html">
+											Наша база
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="housing.html">
+											Где мы живем
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="food.html">
+											Что мы едим
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="travel.html">
+											как мы путешествуем
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="healthy.html">
+											Зож и Зом
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="car-sharing.html">
+											каршеринг
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="companies.html">
+											дЛЯ БОЛЬШИХ КОМПАНИЙ
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="children.html">
+											ДЕТИ
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="gallery.html">
+											Галерея
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="blog.html">
+											Блог
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="contacts.html">
+											Контакты
+										</a>
+									</li>
+								</ul>
+
+
+							</nav>
+							<div class="header__bottom">
+								<ul class="footer-contacts footer-contacts--menu list-reset">
+									<li class="footer-contacts__item">
+										<div class="footer-contacts__name">
+											<span>telegram</span>
+										</div>
+										<a href="http://t.me/molodostaltay" target="_blank">@molodostaltay</a>
+									</li>
+									<li class="footer-contacts__item">
+										<div class="footer-contacts__name">
+											<span>telegram</span>
+											<span>whatsapp</span>
+										</div>
+										<a href="tel:+79139911133" target="_blank">+7 ( 913 ) 991-11-33</a>
+									</li>
+									<li class="footer-contacts__item">
+										<div class="footer-contacts__name">
+											<span>mail</span>
+										</div>
+										<a href="mailto:fishmail@yandex.com">fishmail@yandex.com</a>
+									</li>
+								</ul>
+								<button type="button" class="b-btn b-btn--outline-white js-show-popup" data-trigger="questions">
+									Присоедениться
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__wrap">
+					<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+						<span class="burger__line"></span>
+					</button>
+
+					<button type="button" class="b-btn b-btn--outline-dark js-show-popup" data-trigger="questions">
+						Присоединиться
+					</button>
+
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="contacts">
+				<div class="container">
+					<h2 class="contacts__title second-title">
+						Контакты
+					</h2>
+					<div class="contacts__grid">
+						<div class="contacts__left">
+							<div class="contacts__text">
+								<p>
+									Чтобы стать членом турклуба «Молодость», связывайтесь с нами по телефону
+								</p>
+							</div>
+							<div class="contacts__number">
+								<div class="contacts__icons">
+									<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.9915 3.16602C13.3545 3.16602 10.7766 3.948 8.58394 5.41309C6.39128 6.87817 4.68232 8.96055 3.67315 11.3969C2.66398 13.8333 2.39994 16.5141 2.91441 19.1006C3.42888 21.687 4.69875 24.0627 6.56345 25.9274C8.42815 27.7921 10.8039 29.062 13.3903 29.5765C15.9768 30.091 18.6576 29.8269 21.094 28.8177C23.5303 27.8086 25.6127 26.0996 27.0778 23.9069C28.5429 21.7143 29.3249 19.1364 29.3249 16.4993C29.325 14.7483 28.9802 13.0145 28.3102 11.3967C27.6402 9.77899 26.6581 8.30908 25.42 7.07093C24.1818 5.83279 22.7119 4.85067 21.0942 4.18066C19.4764 3.51065 17.7425 3.16587 15.9915 3.16602ZM20.2309 23.3693C20.181 23.4937 20.105 23.6061 20.0082 23.6988C19.9113 23.7915 19.7957 23.8624 19.6692 23.9068C19.5427 23.9511 19.4082 23.968 19.2746 23.9561C19.1411 23.9442 19.0116 23.904 18.8949 23.838L15.2753 21.0255L12.9522 23.1687C12.8983 23.2085 12.8353 23.2341 12.7689 23.2432C12.7025 23.2523 12.6348 23.2445 12.5722 23.2206L13.0176 19.236L13.0318 19.2473L13.0409 19.1686C13.0409 19.1686 19.5543 13.2386 19.8196 12.986C20.0882 12.734 19.9996 12.6793 19.9996 12.6793C20.0149 12.3719 19.5176 12.6793 19.5176 12.6793L10.8875 18.2313L7.29356 17.0073C7.29356 17.0073 6.74156 16.8093 6.68956 16.374C6.63489 15.942 7.31154 15.7073 7.31154 15.7073L21.6009 10.0307C21.6009 10.0307 22.7755 9.50731 22.7755 10.374L20.2309 23.3693Z" fill="#F2E9E1" />
+									</svg>
+									<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M30.1189 15.7133C29.6656 7.97993 22.6389 2.01995 14.5456 3.35328C8.97223 4.27328 4.50557 8.79326 3.63891 14.3666C3.13224 17.5933 3.79894 20.6466 5.25227 23.1666L4.06558 27.5799C3.79892 28.5799 4.71889 29.4866 5.70556 29.2066L10.0522 28.0066C12.0256 29.1666 14.3322 29.8333 16.7989 29.8333C24.3189 29.8333 30.5589 23.2066 30.1189 15.7133ZM23.3189 21.4599C23.1989 21.6999 23.0522 21.9266 22.8656 22.1399C22.5322 22.4999 22.1722 22.7666 21.7722 22.9266C21.3722 23.0999 20.9322 23.1799 20.4656 23.1799C19.7856 23.1799 19.0522 23.0199 18.2922 22.6866C17.5189 22.3533 16.7589 21.9133 15.9989 21.3666C15.2256 20.8066 14.5056 20.1799 13.8122 19.4999C13.1189 18.8066 12.5055 18.0732 11.9455 17.3132C11.3989 16.5532 10.9589 15.7933 10.6389 15.0333C10.3189 14.2733 10.1589 13.5399 10.1589 12.8466C10.1589 12.3933 10.2389 11.9533 10.3989 11.5533C10.5589 11.1399 10.8123 10.7666 11.1723 10.4333C11.5989 10.0066 12.0656 9.80661 12.5589 9.80661C12.7456 9.80661 12.9322 9.84661 13.1055 9.92661C13.2789 10.0066 13.4389 10.1266 13.5589 10.2999L15.1055 12.4866C15.2255 12.6599 15.3189 12.8066 15.3722 12.9533C15.4389 13.0999 15.4656 13.2333 15.4656 13.3666C15.4656 13.5266 15.4123 13.6866 15.3189 13.8466C15.2256 14.0066 15.1055 14.1666 14.9455 14.3266L14.4389 14.8599C14.3589 14.9399 14.3323 15.0199 14.3323 15.1266C14.3323 15.1799 14.3455 15.2333 14.3589 15.2866C14.3855 15.3399 14.3989 15.3799 14.4123 15.4199C14.5323 15.6466 14.7456 15.9266 15.0389 16.2732C15.3456 16.6199 15.6656 16.9799 16.0123 17.3266C16.3723 17.6866 16.7189 18.0066 17.0789 18.3132C17.4256 18.6066 17.7189 18.8066 17.9455 18.9266C17.9855 18.9399 18.0256 18.9666 18.0656 18.9799C18.1189 19.0066 18.1723 19.0066 18.2389 19.0066C18.3589 19.0066 18.439 18.9666 18.519 18.8866L19.0255 18.3799C19.1989 18.2066 19.3589 18.0866 19.5056 18.0066C19.6656 17.9133 19.8123 17.8599 19.9856 17.8599C20.1189 17.8599 20.2522 17.8866 20.3989 17.9533C20.5456 18.0199 20.7056 18.0999 20.8656 18.2199L23.0789 19.7933C23.2523 19.9133 23.3722 20.0599 23.4522 20.2199C23.5189 20.3933 23.5589 20.5533 23.5589 20.7399C23.4789 20.9666 23.4256 21.2199 23.3189 21.4599Z" fill="#F2E9E1" />
+									</svg>
+								</div>
+								<div class="contacts__num">
+									<a href="tel:+79139911133">+7 ( 913 ) 991-11-33</a>
+								</div>
+							</div>
+							<div class="contacts__bottom">
+								Наш телефон на базе +7 923 667 45 88 работает 24 часа
+							</div>
+						</div>
+						<ul class="contacts-text list-reset">
+							<li>
+								<p>
+									Мы просим Вас писать на этот номер в телеграме или вотсапе даты приезда и количество гостей.
+								</p>
+							</li>
+							<li>
+								<p>
+									С учетом разницы во времени, мы оставляем за собой право ответить на ваше сообщение в течение 24
+									часов.
+								</p>
+							</li>
+							<li>
+								<p>
+									И мы договоримся с Вами об удобном времени для звонка, чтобы обсудить все детали поездки и
+									подтвердить бронирование.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<div class="people offset">
+				<div class="container">
+					<div class="people__group">
+						<div class="people__left">
+							<div class="people__about">
+								<p>
+									С турагентствами сотрудничает
+								</p>
+							</div>
+							<div class="people__name">
+								<p>
+									Настя Баскакова
+								</p>
+							</div>
+						</div>
+						<div class="people__img image">
+							<picture>
+								<source srcset="images/contacts/contact-1.webp 1x, images/contacts/contact-1@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/contacts/contact-1.jpg 1x, images/contacts/contact-1@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/contacts/contact-1.jpg" alt="" width="400" height="388">
+							</picture>
+						</div>
+					</div>
+					<div class="people__group">
+						<div class="people__left">
+							<div class="people__about">
+								<p>
+									Корпоративными или частными мероприятиями от 12 человек занимается наш постоянный партнер
+									Агентство «Маури», а именно
+								</p>
+							</div>
+							<div class="people__name">
+								<p>
+									Маша Лампарадзе
+								</p>
+							</div>
+						</div>
+						<div class="people__img image">
+							<picture>
+								<source srcset="images/contacts/contact-2.webp 1x, images/contacts/contact-2@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/contacts/contact-2.jpg 1x, images/contacts/contact-2@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/contacts/contact-2.jpg" alt="" width="400" height="388">
+							</picture>
+						</div>
+					</div>
+					<div class="people__group">
+						<div class="people__left">
+							<div class="people__about">
+								<p>
+									Если вы хотите договориться с нами о партнерстве, совместных проектах, являетесь журналистом,
+									художником, йогом или человеком другой творческой профессии — звоните
+								</p>
+							</div>
+							<div class="people__name">
+								<p>
+									Даше Шинко
+								</p>
+							</div>
+							<div class="people__about">
+								<p>
+									Если вы хотите поработать в нашей команде — то это тоже к ней.
+								</p>
+							</div>
+						</div>
+						<div class="people__img image">
+							<picture>
+								<source srcset="images/contacts/contact-3.webp 1x, images/contacts/contact-3@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/contacts/contact-3.png 1x, images/contacts/contact-3@2x.png 1.3x" type="image/png">
+								<img src="images/contacts/contact-3.png" alt="" width="400" height="388">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="feedback" style="background-image: url('images/feedback/feedback.jpg')">
+				<div class="container">
+					<div class="feedback__wrapper">
+						<div class="feedback__main">
+							<h2 class="feedback__title section-title">
+								Воодушевились
+								и хотите провести время с нами, но осталось что-то непонятно?
+							</h2>
+							<div class="feedback__subtitle">
+								<p>
+									Сообщите нам, что вас интересует и мы обязательно ответим
+								</p>
+							</div>
+						</div>
+						<div class="feedback__form">
+							<form class="form" action="#" id="main-form">
+								<div class="form__body">
+									<div class="form__row">
+										<label class="form__label" for="main-name">
+											<input type="text" class="form__input" name="main-name" id="main-name" placeholder="Имя">
+										</label>
+									</div>
+									<div class="form__row">
+										<label class="form__label" for="main-phone">
+											<input type="text" class="form__input" name="main-phone" id="main-phone" placeholder="Телефон">
+										</label>
+									</div>
+									<div class="form__row">
+										<label class="form__label" for="main-message">
+											<input type="text" class="form__input" name="main-message" id="main-message" placeholder="Сообщение">
+										</label>
+									</div>
+								</div>
+								<button type="button" class="b-btn b-btn--green">Отправить вопрос</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="index.html" class="footer__logo">
+						<img src="images/icon/logo-footer.svg" alt="Молодость Турбаза на Алтае" width="81" height="76">
+					</a>
+					<ul class="footer-contacts list-reset">
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__name">
+								<span>telegram</span>
+							</div>
+							<a href="http://t.me/molodostaltay" target="_blank">@molodostaltay</a>
+						</li>
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__name">
+								<span>telegram</span>
+								<span>whatsapp</span>
+							</div>
+							<a href="tel:+79139911133" target="_blank">+7 ( 913 ) 991-11-33</a>
+						</li>
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__name">
+								<span>mail</span>
+							</div>
+							<a href="mailto:fishmail@yandex.com">fishmail@yandex.com</a>
+						</li>
+					</ul>
+					<div class="footer__wrap">
+						<a href="#" class="footer__politic">Политика конфиденциальности</a>
+						<div class="footer__design">
+							<span>Дизайн и разработка: <a href="#" target="_blank">Rhino</a> </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="modals">
+		<div class="overlay js-overlay"></div>
+		<div class="popup popup--questions js-popup" data-popup="questions">
+			<button type="button" class="popup__close js-popup-close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 2.75C6.89136 2.75 2.75 6.89136 2.75 12C2.75 17.1086 6.89136 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89136 17.1086 2.75 12 2.75Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3588 8.64121C15.6517 8.9341 15.6517 9.40898 15.3588 9.70187L9.70196 15.3587C9.40907 15.6516 8.93419 15.6516 8.6413 15.3587C8.34841 15.0658 8.34841 14.591 8.6413 14.2981L14.2982 8.64121C14.591 8.34832 15.0659 8.34832 15.3588 8.64121Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6413 8.64121C8.93419 8.34832 9.40907 8.34832 9.70196 8.64121L15.3588 14.2981C15.6517 14.591 15.6517 15.0658 15.3588 15.3587C15.0659 15.6516 14.591 15.6516 14.2982 15.3587L8.6413 9.70187C8.34841 9.40898 8.34841 8.9341 8.6413 8.64121Z" fill="white" />
+				</svg>
+			</button>
+			<div class="popup__wrap">
+				<h3 class="popup__title popup__title--green">
+					Задать вопрос «МОЛОДОСТИ»
+				</h3>
+				<div class="popup__form">
+					<form class="form form--popup" action="#" id="modal-form">
+						<div class="form__body">
+							<div class="form__row">
+								<label class="form__label" for="modal-form-name">
+									<input type="text" class="form__input" name="modal-form-name" id="modal-form-name" placeholder="Имя">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__label" for="modal-form-phone">
+									<input type="text" class="form__input" name="modal-form-phone" id="modal-form-phone" placeholder="Телефон">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__label" for="modal-form-message">
+									<input type="text" class="form__input" name="modal-form-message" id="modal-form-message" placeholder="Сообщение">
+								</label>
+							</div>
+						</div>
+						<button type="button" class="b-btn b-btn--green">Отправить вопрос</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--success js-popup" data-popup="success">
+			<button type="button" class="popup__close js-popup-close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 2.75C6.89136 2.75 2.75 6.89136 2.75 12C2.75 17.1086 6.89136 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89136 17.1086 2.75 12 2.75Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3588 8.64121C15.6517 8.9341 15.6517 9.40898 15.3588 9.70187L9.70196 15.3587C9.40907 15.6516 8.93419 15.6516 8.6413 15.3587C8.34841 15.0658 8.34841 14.591 8.6413 14.2981L14.2982 8.64121C14.591 8.34832 15.0659 8.34832 15.3588 8.64121Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6413 8.64121C8.93419 8.34832 9.40907 8.34832 9.70196 8.64121L15.3588 14.2981C15.6517 14.591 15.6517 15.0658 15.3588 15.3587C15.0659 15.6516 14.591 15.6516 14.2982 15.3587L8.6413 9.70187C8.34841 9.40898 8.34841 8.9341 8.6413 8.64121Z" fill="white" />
+				</svg>
+			</button>
+			<div class="popup__wrap">
+				<h3 class="popup__title popup__title--green">
+					Ваш вопрос
+					успешно отправлен!
+				</h3>
+				<img class="popup__img" src="images/icon/mask.svg" alt="" width="101" height="74">
+				<div class="popup__text">
+					<p>
+						В ближайшее время с Вами свяжется наши сотрудники для уточнения деталей.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

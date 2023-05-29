@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Блог</title>
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header header--cream">
+			<div class="header__container">
+				<!--Logo-->
+				<a href="index.html" class="header__logo">
+
+					<img src="images/icon/logo-footer.svg" alt="Молодость" width="60" height="56">
+
+				</a>
+				<div class="header__panel" data-overlay>
+					<!-- Menu -->
+					<div class="header__menu" data-menu>
+						<div class="header__wrapper">
+							<div class="header__mobile">
+								<div class="header-logo">
+									<img src="images/icon/logo.svg" alt="Молодость" width="60" height="56">
+								</div>
+								<button type="button" class="menu-close" data-close>
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 2.75C6.89136 2.75 2.75 6.89136 2.75 12C2.75 17.1086 6.89136 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89136 17.1086 2.75 12 2.75Z" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3588 8.64121C15.6517 8.9341 15.6517 9.40898 15.3588 9.70187L9.70196 15.3587C9.40907 15.6516 8.93419 15.6516 8.6413 15.3587C8.34841 15.0658 8.34841 14.591 8.6413 14.2981L14.2982 8.64121C14.591 8.34832 15.0659 8.34832 15.3588 8.64121Z" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6413 8.64121C8.93419 8.34832 9.40907 8.34832 9.70196 8.64121L15.3588 14.2981C15.6517 14.591 15.6517 15.0658 15.3588 15.3587C15.0659 15.6516 14.591 15.6516 14.2982 15.3587L8.6413 9.70187C8.34841 9.40898 8.34841 8.9341 8.6413 8.64121Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+							<nav class="nav">
+								<ul class="nav__list list-reset">
+									<li class="nav__item">
+										<a class="nav__link" href="about.html">
+											о нас
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="base.html">
+											Наша база
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="housing.html">
+											Где мы живем
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="food.html">
+											Что мы едим
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="travel.html">
+											как мы путешествуем
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="healthy.html">
+											Зож и Зом
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="car-sharing.html">
+											каршеринг
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="companies.html">
+											дЛЯ БОЛЬШИХ КОМПАНИЙ
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="children.html">
+											ДЕТИ
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="gallery.html">
+											Галерея
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="blog.html">
+											Блог
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="contacts.html">
+											Контакты
+										</a>
+									</li>
+								</ul>
+
+
+							</nav>
+							<div class="header__bottom">
+								<ul class="footer-contacts footer-contacts--menu list-reset">
+									<li class="footer-contacts__item">
+										<div class="footer-contacts__name">
+											<span>telegram</span>
+										</div>
+										<a href="http://t.me/molodostaltay" target="_blank">@molodostaltay</a>
+									</li>
+									<li class="footer-contacts__item">
+										<div class="footer-contacts__name">
+											<span>telegram</span>
+											<span>whatsapp</span>
+										</div>
+										<a href="tel:+79139911133" target="_blank">+7 ( 913 ) 991-11-33</a>
+									</li>
+									<li class="footer-contacts__item">
+										<div class="footer-contacts__name">
+											<span>mail</span>
+										</div>
+										<a href="mailto:fishmail@yandex.com">fishmail@yandex.com</a>
+									</li>
+								</ul>
+								<button type="button" class="b-btn b-btn--outline-white js-show-popup" data-trigger="questions">
+									Присоедениться
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__wrap">
+					<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+						<span class="burger__line"></span>
+					</button>
+
+					<button type="button" class="b-btn b-btn--outline-dark js-show-popup" data-trigger="questions">
+						Присоединиться
+					</button>
+
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+
+			<section class="blog-list offset--second">
+				<div class="container">
+					<div class="blog__list-title second-title">
+						Блог
+					</div>
+					<div class="blog-list__grid">
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="blog-page.html" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog-card">
+							<div class="blog-card__image">
+								<picture class="newbie-about__img">
+									<source srcset="images/blog/blog-card/blog.webp 1x, images/blog/blog-card/blog@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/blog/blog-card/blog.jpg 1x, images/blog/blog-card/blog@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/blog/blog-card/blog.jpg" alt="Блог" width="360" height="226">
+								</picture>
+							</div>
+							<div class="blog-card__main">
+								<div class="blog-card__name">
+									<p>
+										Ботанический сад
+									</p>
+								</div>
+								<div class="blog-card__about">
+									<p>
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+										Ботанический сад, который был создан Новосибирским университетом в 60-е годы ХХ века +
+										Зубровый питомник с самой большой популяцией зубров в России
+									</p>
+								</div>
+								<div class="blog-card__bottom">
+									<div class="blog-card__date">
+										<p>
+											24.02.2023
+										</p>
+									</div>
+									<a href="#" class="blog-card__link">
+										<span>
+											Подробнее
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="pagination list-reset">
+						<li class="pagination__item">
+							<a href="#" class="pagination__link active">
+								01
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								02
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								03
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link">
+								04
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a href="#" class="pagination__link pagination__link--text">
+								Вперед
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="index.html" class="footer__logo">
+						<img src="images/icon/logo-footer.svg" alt="Молодость Турбаза на Алтае" width="81" height="76">
+					</a>
+					<ul class="footer-contacts list-reset">
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__name">
+								<span>telegram</span>
+							</div>
+							<a href="http://t.me/molodostaltay" target="_blank">@molodostaltay</a>
+						</li>
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__name">
+								<span>telegram</span>
+								<span>whatsapp</span>
+							</div>
+							<a href="tel:+79139911133" target="_blank">+7 ( 913 ) 991-11-33</a>
+						</li>
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__name">
+								<span>mail</span>
+							</div>
+							<a href="mailto:fishmail@yandex.com">fishmail@yandex.com</a>
+						</li>
+					</ul>
+					<div class="footer__wrap">
+						<a href="#" class="footer__politic">Политика конфиденциальности</a>
+						<div class="footer__design">
+							<span>Дизайн и разработка: <a href="#" target="_blank">Rhino</a> </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="modals">
+		<div class="overlay js-overlay"></div>
+		<div class="popup popup--questions js-popup" data-popup="questions">
+			<button type="button" class="popup__close js-popup-close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 2.75C6.89136 2.75 2.75 6.89136 2.75 12C2.75 17.1086 6.89136 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89136 17.1086 2.75 12 2.75Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3588 8.64121C15.6517 8.9341 15.6517 9.40898 15.3588 9.70187L9.70196 15.3587C9.40907 15.6516 8.93419 15.6516 8.6413 15.3587C8.34841 15.0658 8.34841 14.591 8.6413 14.2981L14.2982 8.64121C14.591 8.34832 15.0659 8.34832 15.3588 8.64121Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6413 8.64121C8.93419 8.34832 9.40907 8.34832 9.70196 8.64121L15.3588 14.2981C15.6517 14.591 15.6517 15.0658 15.3588 15.3587C15.0659 15.6516 14.591 15.6516 14.2982 15.3587L8.6413 9.70187C8.34841 9.40898 8.34841 8.9341 8.6413 8.64121Z" fill="white" />
+				</svg>
+			</button>
+			<div class="popup__wrap">
+				<h3 class="popup__title popup__title--green">
+					Задать вопрос «МОЛОДОСТИ»
+				</h3>
+				<div class="popup__form">
+					<form class="form form--popup" action="#" id="modal-form">
+						<div class="form__body">
+							<div class="form__row">
+								<label class="form__label" for="modal-form-name">
+									<input type="text" class="form__input" name="modal-form-name" id="modal-form-name" placeholder="Имя">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__label" for="modal-form-phone">
+									<input type="text" class="form__input" name="modal-form-phone" id="modal-form-phone" placeholder="Телефон">
+								</label>
+							</div>
+							<div class="form__row">
+								<label class="form__label" for="modal-form-message">
+									<input type="text" class="form__input" name="modal-form-message" id="modal-form-message" placeholder="Сообщение">
+								</label>
+							</div>
+						</div>
+						<button type="button" class="b-btn b-btn--green">Отправить вопрос</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--success js-popup" data-popup="success">
+			<button type="button" class="popup__close js-popup-close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM12 2.75C6.89136 2.75 2.75 6.89136 2.75 12C2.75 17.1086 6.89136 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89136 17.1086 2.75 12 2.75Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3588 8.64121C15.6517 8.9341 15.6517 9.40898 15.3588 9.70187L9.70196 15.3587C9.40907 15.6516 8.93419 15.6516 8.6413 15.3587C8.34841 15.0658 8.34841 14.591 8.6413 14.2981L14.2982 8.64121C14.591 8.34832 15.0659 8.34832 15.3588 8.64121Z" fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.6413 8.64121C8.93419 8.34832 9.40907 8.34832 9.70196 8.64121L15.3588 14.2981C15.6517 14.591 15.6517 15.0658 15.3588 15.3587C15.0659 15.6516 14.591 15.6516 14.2982 15.3587L8.6413 9.70187C8.34841 9.40898 8.34841 8.9341 8.6413 8.64121Z" fill="white" />
+				</svg>
+			</button>
+			<div class="popup__wrap">
+				<h3 class="popup__title popup__title--green">
+					Ваш вопрос
+					успешно отправлен!
+				</h3>
+				<img class="popup__img" src="images/icon/mask.svg" alt="" width="101" height="74">
+				<div class="popup__text">
+					<p>
+						В ближайшее время с Вами свяжется наши сотрудники для уточнения деталей.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
